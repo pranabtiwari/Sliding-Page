@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LandSlidingPage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=SUSE:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="BoxLogo">
+        <div class="first"></div>
+        <div class="middle">
+          <img src="img/download.jfif" alt="" srcset="">
+        </div>
+        <div class="last"></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="TopPart"></div>
+      <div class="BottomPart">
+        <div class="FormInfo">
+          <form action="/" method="post" onsubmit="return validateForm(event)">
+            <div class="inputs">
+                <label for="user-info">Full Name</label>
+                <input
+                    type="text"
+                    placeholder="Enter Your Name"
+                    id="user-info"
+                    class="style-input"
+                    oninput="fullnamevalidation()"
+                />
+                <span id="Check-fullname"></span>
+            </div>
+            <div class="inputs">
+                <label for="user-Email">Email</label>
+                <input
+                    type="text"
+                    placeholder="Enter Your Email"
+                    id="user-Email"
+                    class="style-input"
+                    oninput="emailValidation()"
+                />
+                <span id="Check-email"></span>
+            </div>
+            <div class="inputs">
+                <label for="user-Phoneno">Phone Number</label>
+                <input
+                    type="text"
+                    placeholder="Enter Your Phone Number"
+                    id="user-Phoneno"
+                    class="style-input"
+                    oninput="phoneValidation()"
+                />
+                <span id="Check-number"></span>
+            </div>
+            <button type="submit">Get Started Now</button>
+            <span id="Check-submit" class="span-submit"></span>
+        </form>
+        
+        </div>
+        <div class="MainText">
+          <h1>We Can Help</h1>
+          <h3>You can live the life you deserve</h3>
+          <p>
+            We can help you learn how to use your ablitiy and skills to earn
+            money and see the best in your life
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/5ea7fdf287.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
